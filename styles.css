@@ -1,2 +1,22 @@
 
 /* Your CSS Code here. */
+
+/* Apply these styles to the holder class */
+.holder {
+    display: flex;
+    justify-content: space-between; /* Distribute items evenly with space between */
+    flex-wrap: wrap; /* Allow items to wrap to the next row */
+}
+
+/* Apply these styles to the item class */
+.item {
+    flex-basis: calc(33.33% - 20px); /* Set the initial width of each item with spacing */
+    margin-bottom: 20px; /* Add spacing between rows */
+}
+
+/* Media query for responsiveness */
+@media (max-width: 767px) {
+    .item {
+        flex-basis: calc(50% - 20px); /* Adjust item width for smaller screens */
+    }
+}
